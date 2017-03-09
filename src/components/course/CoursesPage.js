@@ -37,7 +37,7 @@ class CoursesPage extends React.Component {
           value="Save"
           onClick={this.onClickSave} />
       </div>
-    )
+    );
   }
 }
 
