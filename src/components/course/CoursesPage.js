@@ -31,6 +31,7 @@ class CoursesPage extends React.Component {
   }
 
   render() {
+    debugger; // #0, #4: render, Redux
     return (
       <div>
         <h1>Courses</h1>
@@ -56,6 +57,7 @@ CoursesPage.propTypes = {
 };
 
 function mapStateToProps(state, ownProps) {
+  debugger; // #3: React
   return {
     courses: state.courses
   };
