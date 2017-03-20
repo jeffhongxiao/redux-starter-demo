@@ -10,7 +10,7 @@ export function updateCourseSuccess(course) {
 }
 
 export function createCourseSuccess(course) {
-  return { type: types.UPDATE_COURSE_SUCCESS, course: course}
+  return { type: types.UPDATE_COURSE_SUCCESS, course: course};
 }
 
 export function loadCourses() {
@@ -29,7 +29,7 @@ export function saveCourse(course) {
       course.id ? dispatch(updateCourseSuccess(savedCourse)) :
         dispatch(createCourseSuccess(savedCourse));
     }).catch(error => {
-      thorw(error);
+      throw(error);
     });
-  }
+  };
 }
